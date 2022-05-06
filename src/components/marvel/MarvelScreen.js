@@ -4,7 +4,7 @@ const MarvelScreen = () => {
   return (
     <>
       <h1>Marvel Screen</h1>
-      <HeroList publisher={'Marvel Comics'} />;
+      <HeroList publisher={'Marvel Comics'} />
     </>
   );
 };
