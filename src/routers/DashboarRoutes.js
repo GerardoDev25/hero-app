@@ -10,15 +10,17 @@ const DashboarRoutes = () => {
   return (
     <>
       <Navbar />
-      <Routes>
-        <Route path="dc" element={<DcScree />} />
-        <Route path="hero" element={<HeroScreen />} />
-        <Route path="marvel" element={<MarvelScreen />} />
+      <div className="container">
+        <Routes>
+          <Route path="dc" element={<DcScree />} />
+          <Route path="hero" element={<HeroScreen />} />
+          <Route path="marvel" element={<MarvelScreen />} />
 
-        <Route path="search" element={<SearchScreen />} />
+          <Route path="search" element={<SearchScreen />} />
 
-        <Route path="/" element={<MarvelScreen />} />
-      </Routes>
+          <Route path="/" element={<MarvelScreen />} />
+        </Routes>
+      </div>
     </>
   );
 };

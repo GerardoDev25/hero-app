@@ -1,7 +1,9 @@
-import { Link, NavLink } from 'react-router-dom';
+import { Link, NavLink, useNavigate } from 'react-router-dom';
 const Navbar = () => {
-  const handleLogout = (e) => {
-    console.log('logount');
+  const navigate = useNavigate();
+
+  const handleLogout = () => {
+    navigate('/login', { replace: true });
   };
 
   return (
